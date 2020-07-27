@@ -14,7 +14,7 @@ penetrations = pistolData['Penetration']
 types = pistolData['Type']
 
 # Array of colors that we want to use
-possibleColors = ['red', 'darkorange', 'gold', 'lawngreen', 'deepskyblue', 'white', 'blueviolet', "teal", "palegreen"]
+possibleColors = ['red', 'darkorange', 'gold', 'lawngreen', 'deepskyblue', 'white', 'blueviolet', "teal"]
 
 # Now we randomzie them
 random.shuffle(possibleColors)
@@ -51,7 +51,7 @@ plt.grid(color='#696363', linestyle=':', linewidth=1, zorder=0)
 
 # Sets the numerical limits
 plt.ylim(0, 60)
-plt.xlim(30, 140)
+plt.xlim(30, 130)
 
 # Where the armor classes lie on the penetration scale
 armorClasses = [10, 20, 30, 40, 50, 60]
@@ -62,8 +62,8 @@ for i, armorClass in enumerate(armorClasses):
     plt.annotate("Class %i" % (i + 1), (plt.gca().get_xlim()[0] + 0.5, armorClass + 0.5), xytext=(plt.gca().get_xlim()[0] + 0.5, armorClass + 0.5))
 
 # Draws the line for 1 shot in the chest
-plt.axvline(x=80, color="#b5b0b0", linestyle="--", linewidth=1, zorder=1)
-plt.annotate("Chest HP", (80.5, 0.5), xytext=(80.5, 0.5))
+plt.axvline(x=85, color="#b5b0b0", linestyle="--", linewidth=1, zorder=1)
+plt.annotate("Chest HP", (85.5, 0.5), xytext=(85.5, 0.5))
 
 # Set the labels
 plt.title("Pistol/SMG Rounds")
