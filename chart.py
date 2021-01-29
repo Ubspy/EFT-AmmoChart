@@ -14,7 +14,7 @@ penetrations = pistolData['Penetration']
 types = pistolData['Type']
 
 # Array of colors that we want to use
-possibleColors = ['red', 'darkorange', 'gold', 'lawngreen', 'deepskyblue', 'white', 'blueviolet', "teal"]
+possibleColors = ['red', 'darkorange', 'gold', 'lawngreen', 'deepskyblue', 'white', 'blueviolet', "aqua"]
 
 # Now we randomzie them
 random.shuffle(possibleColors)
